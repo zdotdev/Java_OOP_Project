@@ -11,15 +11,15 @@ class dog implements Animal{
     
     @Override
     public void sound(){
-        System.out.println("lamaw");
+        System.out.println("Dog sound is: Bark");
     }
     @Override
     public void color(){
-        System.out.println("yaw");
+        System.out.println("Dog color is: Black");
     }
     @Override
     public void speed(){
-        System.out.println("charan");
+        System.out.println("Dog Speed is: 48 km/h");
     }
 }
 
@@ -27,15 +27,15 @@ class horse implements Animal{
     
     @Override
     public void sound(){
-        System.out.println("lamaw");
+        System.out.println("Horse sound is: Neigh");
     }
     @Override
     public void color(){
-        System.out.println("yaw");
+        System.out.println("Horse color is: Brown");
     }
     @Override
     public void speed(){
-        System.out.println("charan");
+        System.out.println("Horse speed is: 71 km/h");
     }
 }
 
@@ -43,15 +43,15 @@ class cow implements Animal{
     
     @Override
     public void sound(){
-        System.out.println("lamaw");
+        System.out.println("Cow sound is: Moo");
     }
     @Override
     public void color(){
-        System.out.println("yaw");
+        System.out.println("Cow color is: White");
     }
     @Override
     public void speed(){
-        System.out.println("charan");
+        System.out.println("Cow speed is: 40 km/h");
     }
 }
 
@@ -59,15 +59,15 @@ class pig implements Animal{
     
     @Override
     public void sound(){
-        System.out.println("lamaw");
+        System.out.println("Pig sound is: Oinks");
     }
     @Override
     public void color(){
-        System.out.println("yaw");
+        System.out.println("Pig color is: Pink");
     }
     @Override
     public void speed(){
-        System.out.println("charan");
+        System.out.println("Pig speed is: 17.7 km/h");
     }
 }
 
@@ -89,35 +89,25 @@ public class overriding {
         
         switch(choice){
             case(1):
-                System.out.print("Dog sound is ");
                 d.sound();
-                System.out.print("Dog color is ");
                 d.color();
-                System.out.print("Dog speed is ");
                 d.speed();
                 break;
             case(2):
-                System.out.print("Horse sound is ");
                 h.sound();
-                System.out.print("horse color is ");
                 h.color();
-                System.out.print("Horse speed is ");
                 h.speed();
                 break;
             case(3):
-                System.out.print("Cow sound is ");
                 c.sound();
-                System.out.print("Cow color is ");
                 c.color();
-                System.out.print("Cow speed is ");
                 c.speed();
+                break;
             case(4):
-                System.out.print("pig sound is ");
                 p.sound();
-                System.out.print("Pig color is ");
                 p.color();
-                System.out.print("Pig Speed is ");
                 p.speed();
+                break;
         }
         
     }
