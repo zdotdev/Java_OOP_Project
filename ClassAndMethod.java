@@ -1,4 +1,4 @@
-public class Cupcake {
+public class ClassAndMethod {
   // Attributes
   String name;
   int calories;
@@ -18,7 +18,7 @@ public class Cupcake {
 
   public static void run() {
     // Create an instance of the Cupcake class
-    Cupcake myCupcake = new Cupcake();
+    ClassAndMethod myCupcake = new ClassAndMethod();
 
     // Set the attributes of the cupcake
     myCupcake.name = "Chocolate";

@@ -1,4 +1,4 @@
-public class Greeting {
+public class MethodOverloading {
   // Method 1: greet in English
   public void greet() {
     System.out.println("Hello");
@@ -16,7 +16,7 @@ public class Greeting {
   }
 
   public static void run() {
-    Greeting greet = new Greeting();
+    MethodOverloading greet = new MethodOverloading();
     greet.greet();
     greet.greet("Tagalog");
     greet.greet("Spanish");
