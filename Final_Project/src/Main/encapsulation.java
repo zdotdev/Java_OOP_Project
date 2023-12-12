@@ -3,7 +3,7 @@ package Main;
 import java.util.*;
 
 public class encapsulation {
-     private float principal = 0;
+    private float principal = 0;
     private float interest = 0;
     private final int valOneK = 1_000;
     private final int valOneM = 1_000_000;

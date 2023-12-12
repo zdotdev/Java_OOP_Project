@@ -13,7 +13,7 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    String[] options = { "0- Exit", "1- Option 1", "2- Option 2", "3- Encapsulation", "4- Overriding using Interface" };
+    String[] options = { "0- Exit", "1- Class and Methods", "2- Method Overloading", "3- Encapsulation", "4- Overriding using Interface", "5- Overriding wthout Interface", "6- Loops"};
     Scanner scanner = new Scanner(System.in);
     int option = 1;
     clearConsole();
@@ -38,6 +38,12 @@ public class Main {
           case 4:
             option4(scanner);
             break;
+          case 5:
+            option5(scanner);
+            break;
+          case 6:
+            option6(scanner);
+            break;
         }
         clearConsole();
       } catch (InputMismatchException ex) {
@@ -57,9 +63,7 @@ public class Main {
     while (true) {
       clearConsole();
       System.out.println("Thanks for choosing option 1");
-      System.out.print("Please enter your name: ");
-      String name = scanner.nextLine();
-      System.out.println("Hello, " + name);
+      ClassAndMethods.run();
       System.out.println("1- Run Again");
       System.out.println("0- Back");
       int choice = scanner.nextInt();
@@ -75,9 +79,7 @@ public class Main {
     while (true) {
       clearConsole();
       System.out.println("Thanks for choosing option 2");
-      System.out.print("Please enter your name: ");
-      String name = scanner.nextLine();
-      System.out.println("Hello, " + name);
+      MethodOverloading.run();
       System.out.println("1- Run Again");
       System.out.println("0- Back");
       int choice = scanner.nextInt();
@@ -91,15 +93,16 @@ public class Main {
   private static void option3(Scanner scanner) {
     clearConsole();
     while (true) {
-      encapsulation encapt = new encapsulation();
+        encapsulation encapt = new encapsulation();
         clearConsole();
-      encapt.calculator();
-      System.out.println("1- Run Again");
-      System.out.println("0- Back");
-      int choice = scanner.nextInt();
-      scanner.nextLine();
-      if (choice == 0) {
-        break;
+        System.out.println("Thanks for choosing option 3");
+        encapt.calculator();
+        System.out.println("1- Run Again");
+        System.out.println("0- Back");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+        if (choice == 0) {
+            break;
       }
     }
   }
@@ -120,6 +123,37 @@ public class Main {
     }
   }
 
+    private static void option5(Scanner scanner) {
+    clearConsole();
+    while (true) {
+      MethodOverriding mo = new MethodOverriding();
+        clearConsole();
+      mo.main();
+      System.out.println("1- Run Again");
+      System.out.println("0- Back");
+      int choice = scanner.nextInt();
+      scanner.nextLine();
+      if (choice == 0) {
+        break;
+      }
+    }
+  }
+  
+    private static void option6(Scanner scanner) {
+    clearConsole();
+    while (true) {
+        clearConsole();
+      Loops.run();
+      System.out.println("1- Run Again");
+      System.out.println("0- Back");
+      int choice = scanner.nextInt();
+      scanner.nextLine();
+      if (choice == 0) {
+        break;
+      }
+    }
+  }
+    
   public static void clearConsole() {
     System.out.print("\033[H\033[2J");
     System.out.flush();
