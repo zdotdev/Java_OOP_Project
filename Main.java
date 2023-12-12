@@ -12,7 +12,9 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    String[] options = { "0- Exit", "1- Option 1", "2- Option 2", "3- Option 3" };
+    String[] options = {
+      "0- Exit", "1 - Class and Methods", "2 - Method Overloading", "3- Encapsulation"
+    };
     Scanner scanner = new Scanner(System.in);
     int option = 1;
     clearConsole();
@@ -52,12 +54,10 @@ public class Main {
     clearConsole();
     while (true) {
       clearConsole();
-      System.out.println("Thanks for choosing option 1");
-      System.out.print("Please enter your name: ");
-      String name = scanner.nextLine();
-      System.out.println("Hello, " + name);
-      System.out.println("1- Run Again");
-      System.out.println("0- Back");
+      Cupcake cupcake = new Cupcake();
+      cupcake.run();
+      System.out.println("1 - Run Again");
+      System.out.println("0 - Back");
       int choice = scanner.nextInt();
       scanner.nextLine();
       if (choice == 0) {
@@ -70,12 +70,10 @@ public class Main {
     clearConsole();
     while (true) {
       clearConsole();
-      System.out.println("Thanks for choosing option 2");
-      System.out.print("Please enter your name: ");
-      String name = scanner.nextLine();
-      System.out.println("Hello, " + name);
-      System.out.println("1- Run Again");
-      System.out.println("0- Back");
+      Greeting greet = new Greeting();
+      greet.run();
+      System.out.println("1 - Run Again");
+      System.out.println("0 - Back");
       int choice = scanner.nextInt();
       scanner.nextLine();
       if (choice == 0) {
@@ -87,11 +85,9 @@ public class Main {
   private static void option3(Scanner scanner) {
     clearConsole();
     while (true) {
+      encapsulation encapt = new encapsulation();
       clearConsole();
-      System.out.println("Thanks for choosing option 3");
-      System.out.print("Please enter your name: ");
-      String name = scanner.nextLine();
-      System.out.println("Hello, " + name);
+      encapt.calculator();
       System.out.println("1- Run Again");
       System.out.println("0- Back");
       int choice = scanner.nextInt();

@@ -1,0 +1,17 @@
+Class and Methods
+- it should include all the data types
+- class {
+  attributes (variable) 
+  method()
+  main method (
+  instance of the class
+  call the method
+  )
+}
+
+Method Overloading
+Method Overriding
+- with and without interface
+Encapsulation
+
+Loops
