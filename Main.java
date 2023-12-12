@@ -13,7 +13,7 @@ public class Main {
 
   public static void main(String[] args) {
     String[] options = {
-      "0- Exit", "1 - Class and Methods", "2 - Method Overloading", "3- Encapsulation"
+      "0- Exit", "1 - Class and Methods", "2 - Method Overloading", "3 - Encapsulation", "4 - Loops"
     };
     Scanner scanner = new Scanner(System.in);
     int option = 1;
@@ -36,6 +36,9 @@ public class Main {
           case 3:
             option3(scanner);
             break;
+          case 4:
+            option4(scanner);
+            break;
         }
         clearConsole();
       } catch (InputMismatchException ex) {
@@ -54,7 +57,7 @@ public class Main {
     clearConsole();
     while (true) {
       clearConsole();
-      Cupcake cupcake = new Cupcake();
+      ClassAndMethod cupcake = new ClassAndMethod();
       cupcake.run();
       System.out.println("1 - Run Again");
       System.out.println("0 - Back");
@@ -70,7 +73,7 @@ public class Main {
     clearConsole();
     while (true) {
       clearConsole();
-      Greeting greet = new Greeting();
+      MethodOverloading greet = new MethodOverloading();
       greet.run();
       System.out.println("1 - Run Again");
       System.out.println("0 - Back");
@@ -88,6 +91,21 @@ public class Main {
       encapsulation encapt = new encapsulation();
       clearConsole();
       encapt.calculator();
+      System.out.println("1- Run Again");
+      System.out.println("0- Back");
+      int choice = scanner.nextInt();
+      scanner.nextLine();
+      if (choice == 0) {
+        break;
+      }
+    }
+  }
+
+  private static void option4(Scanner scanner) {
+    clearConsole();
+    while (true) {
+      Loops game = new Loops();
+      game.run();
       System.out.println("1- Run Again");
       System.out.println("0- Back");
       int choice = scanner.nextInt();
