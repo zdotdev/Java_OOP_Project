@@ -1,7 +1,6 @@
 package Main;
 
 import static java.lang.System.exit;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -14,7 +13,7 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    String[] options = { "0- Exit", "1- Option 1", "2- Option 2", "3- Encapsulation" };
+    String[] options = { "0- Exit", "1- Option 1", "2- Option 2", "3- Encapsulation", "4- Overriding using Interface" };
     Scanner scanner = new Scanner(System.in);
     int option = 1;
     clearConsole();
@@ -35,6 +34,9 @@ public class Main {
             break;
           case 3:
             option3(scanner);
+            break;
+          case 4:
+            option4(scanner);
             break;
         }
         clearConsole();
@@ -92,6 +94,22 @@ public class Main {
       encapsulation encapt = new encapsulation();
         clearConsole();
       encapt.calculator();
+      System.out.println("1- Run Again");
+      System.out.println("0- Back");
+      int choice = scanner.nextInt();
+      scanner.nextLine();
+      if (choice == 0) {
+        break;
+      }
+    }
+  }
+  
+  private static void option4(Scanner scanner) {
+    clearConsole();
+    while (true) {
+      overriding or = new overriding();
+        clearConsole();
+      or.main();
       System.out.println("1- Run Again");
       System.out.println("0- Back");
       int choice = scanner.nextInt();
