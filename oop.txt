@@ -1,6 +1,0 @@
-Class and Methods
-Method Overloading
-Method Overriding
-- with and without interface
-Encapsulation
-Loops
